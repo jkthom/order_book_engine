@@ -1,0 +1,17 @@
+# Build artifacts
+/build/
+/CMakeFiles/
+/Makefile
+/*.o
+/*.obj
+/*.exe
+
+# IDE / Editor
+*.swp
+*.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
