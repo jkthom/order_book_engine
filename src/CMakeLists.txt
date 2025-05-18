@@ -4,8 +4,12 @@ add_library(order_book
   matching_engine.cpp
 )
 
-# Tell the compiler where to find your headers
-target_include_directories(order_book PUBLIC ${CMAKE_SOURCE_DIR}/include)
+# Tell CMake and the compiler where to find headers
+target_include_directories(order_book
+  PUBLIC
+    ${CMAKE_SOURCE_DIR}/include
+    ${BOOST_INC}
+)
 
 # Build the CLI executable
 add_executable(ob_engine main.cpp)
